@@ -21,5 +21,8 @@ jobs:
         distribution: 'temurin'
     - name: Build with Gradle
       run: sh gradlew clean build
+    - run: | 
+            cd build/libs
+            ls -lrt      
     
         
